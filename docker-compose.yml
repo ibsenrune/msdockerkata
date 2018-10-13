@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  userms:
+    image: runeibsen/msdockerkata-userms
+    ports:
+      - "8090:80"
+  greetingms:
+    image: runeibsen/msdockerkata-greetingms
+    ports:
+      - "8080:80"
