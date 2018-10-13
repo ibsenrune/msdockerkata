@@ -13,7 +13,7 @@ namespace UserMs.Controllers
         public async Task<IActionResult> Get()
         {
             var client = new HttpClient();
-            var s = await client.GetStringAsync("http://localhost:8090/user");
+            var s = await client.GetStringAsync("http://userms/user");
 
             return Ok("Hello " + s);
         }
